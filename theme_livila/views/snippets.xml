@@ -1,0 +1,780 @@
+<odoo>
+
+    <!-- Hero Images -->
+
+    <!-- Hero Image Design 1 -->
+    <template id="hero_image_design_one" name="Hero Image Design 1">
+        <section class="hero_image_design_one custom">
+            <div class="hero_image_one-main">
+                <div class="container">
+                    <div class="hero_image_one-slider_container ">
+                        <div id="hero_image_one" class="carousel hero_image_one slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                            </ol>
+                            <div class="carousel-inner">
+
+                                <div class="carousel-item">
+                                    <div class="hero_image_one-overlay_container">
+                                        <div class="hero_image_one-overlay_image">   
+                                            <img src="/theme_livila/static/src/images/slider_img1.jpg"/>
+                                        </div>
+                                        <div class="hero_image_one-overlay_content overlay_hide">
+                                            <div class="hero_image_one-anime_left">
+                                                <h1 class="animated slideInRight">Furniture makes your house your home</h1>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <div class="hero_image_one-overlay_container">
+                                        <div class="hero_image_one-overlay_image">   
+                                            <img src="/theme_livila/static/src/images/slider_img2.jpg"/>
+                                        </div>
+                                        <div class="hero_image_one-overlay_content overlay_hide">
+                                            <div class="hero_image_one-anime_right">
+                                                <h1 class="animated slideInRight">Furniture makes your house your home</h1>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <div class="hero_image_one-overlay_container">
+                                        <div class="hero_image_one-overlay_image">   
+                                            <img src="/theme_livila/static/src/images/slider_img3.jpg"/>
+                                        </div>
+                                        <div class="hero_image_one-overlay_content overlay_hide">
+                                            <div class="hero_image_one-anime_left">
+                                                <h1 class="animated slideInRight">Furniture makes your house your home</h1>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <div class="hero_image_one-overlay_container">
+                                        <div class="hero_image_one-overlay_image">   
+                                            <img src="/theme_livila/static/src/images/slider_img2.jpg"/>
+                                        </div>
+                                        <div class="hero_image_one-overlay_content overlay_hide">
+                                            <div class="hero_image_one-anime_right">
+                                                <h1 class="animated slideInRight">Furniture makes your house your home</h1>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <!-- <t t-snippet="theme_livila.hero_image" t-thumbnail="/theme_livila/static/src/images/icon_shopping.png"/> -->
+
+    <!-- Hero Image Design 2 -->
+    <template id="hero_image_design_two" name="Hero Image Design 2">
+        <section class="hero_image_design_two custom">
+            <div class="hero_image_two-main">
+                <div class="">
+                    <div class="hero_image_two-slider_container ">
+                        <div id="hero_image_two" class="carousel hero_image_two slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                            </ol>
+                            <div class="carousel-inner">
+
+                                <div class="carousel-item">
+                                    <div class="hero_image_two-overlay_container">
+                                        <div class="hero_image_two-overlay_image">   
+                                            <img src="/theme_livila/static/src/images/slider_img1.jpg"/>
+                                        </div>
+                                        <div class="hero_image_two-overlay_content overlay_hide">
+                                            <div class="hero_image_two-anime_left">
+                                                <h1 class="animated slideInRight">Furniture makes your house your home</h1>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <div class="hero_image_two-overlay_container">
+                                        <div class="hero_image_two-overlay_image">   
+                                            <img src="/theme_livila/static/src/images/slider_img2.jpg"/>
+                                        </div>
+                                        <div class="hero_image_two-overlay_content overlay_hide">
+                                            <div class="hero_image_two-anime_right">
+                                                <h1 class="animated slideInRight">Furniture makes your house your home</h1>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <div class="hero_image_two-overlay_container">
+                                        <div class="hero_image_two-overlay_image">   
+                                            <img src="/theme_livila/static/src/images/slider_img3.jpg"/>
+                                        </div>
+                                        <div class="hero_image_two-overlay_content overlay_hide">
+                                            <div class="hero_image_two-anime_left">
+                                                <h1 class="animated slideInRight">Furniture makes your house your home</h1>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <div class="hero_image_two-overlay_container">
+                                        <div class="hero_image_two-overlay_image">   
+                                            <img src="/theme_livila/static/src/images/slider_img2.jpg"/>
+                                        </div>
+                                        <div class="hero_image_two-overlay_content overlay_hide">
+                                            <div class="hero_image_two-anime_right">
+                                                <h1 class="animated slideInRight">Furniture makes your house your home</h1>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <!-- <t t-snippet="theme_livila.hero_image_design_two" t-thumbnail="/theme_livila/static/src/images/icon_shopping.png"/> -->
+
+    <!-- Heading -->
+
+    <!-- Heading Design 1 -->
+    <template id="heading_design_one" name="Heading Design 1">
+        <section class="heading_design_one custom">
+            <div class="heading_one">
+                <div class="container">
+                    <div class="heading_one-content">
+                        <h1>Exceptional designing for exceptional Spaces.</h1>
+                        <p>That is originally why the concept evolved to include accessories. We found that furniture sells better when you show it with accessories.</p>
+                    </div>
+                    <div class="heading_one-button">
+                        <a href="#">click to see</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <!-- <t t-snippet="theme_livila.heading_design_one" t-thumbnail="/theme_livila/static/src/images/v_drawars1.jpg"/> -->
+
+    <!-- Heading Design 2 -->
+    <template id="heading_design_two" name="Heading Design 2">
+        <section class="heading_design_two custom">
+            <div class="heading_two">
+                <div class="container">
+                    <div class="heading_two-content">
+                        <h1>Exceptional designing for exceptional Spaces.</h1>
+                        <p>That is originally why the concept evolved to include accessories. We found that furniture sells better when you show it with accessories.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <!-- <t t-snippet="theme_livila.heading_design_two" t-thumbnail="/theme_livila/static/src/images/v_drawars1.jpg"/> -->
+
+    <!-- Heading Design 3 -->
+    <template id="heading_design_three" name="Heading Design 3">
+        <section class="heading_design_three custom">
+            <div class="heading_three">
+                <div class="container">
+                    <div class="heading_three-content">
+                        <h1>Exceptional designing for exceptional Spaces.</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <!-- <t t-snippet="theme_livila.heading_design_three" t-thumbnail="/theme_livila/static/src/images/v_drawars1.jpg"/> -->
+
+    <!-- Heading Design 4 -->
+    <template id="heading_design_four" name="Heading Design 4">
+        <section class="heading_design_four custom">
+            <div class="heading_four">
+                <div class="container">
+                    <div class="heading_four-content">
+                        <h1>Exceptional designing for exceptional Spaces.</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <!-- <t t-snippet="theme_livila.heading_design_four" t-thumbnail="/theme_livila/static/src/images/v_drawars1.jpg"/> -->
+
+
+    <!-- Banners -->
+
+    <!-- Banner Design 1 -->
+    <template id="banner_design_one" name="Banner Design 1">
+        <section class="banner_design_one custom">
+            <div class="banner_design_one-gridbox banner_design_one-gridbox_small">
+                <div class="banner_design_one-container">
+                    <div class="banner_design_one-image">
+                        <img src="/theme_livila/static/src/images/sale_drawers1.jpg" alt=""/>
+                    </div>
+                    <div class="banner_design_one-overlay_bg overlay_hide">
+                        <div class="banner_design_one-content">
+                        </div>
+                    </div>
+                    <div class="banner_design_one-overlay_left overlay_hide">
+                        <div class="banner_design_one-content">
+                        </div>
+                    </div>
+                    <div class="banner_design_one-overlay overlay_hide">
+                        <div class="banner_design_one-content">
+                            <h1>50% OFF ON ALL DRAWERS</h1>
+                            <div class="tagline">Hurry!! Offer for limited time and period. Hey dont miss chance.</div>
+                            <div class="banner_sale_button">
+                                <a href="/shop">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner_design_one-container">
+                    <div class="banner_design_one-image">
+                        <img src="/theme_livila/static/src/images/sale_chairs.jpg" alt=""/>
+                    </div>
+                    <div class="banner_design_one-overlay_bg overlay_hide">
+                        <div class="banner_design_one-content">
+                        </div>
+                    </div>
+                    <div class="banner_design_one-overlay_left overlay_hide">
+                        <div class="banner_design_one-content">
+                        </div>
+                    </div>
+                    <div class="banner_design_one-overlay overlay_hide">
+                        <div class="banner_design_one-content">
+                            <h1>50% OFF ON ALL CHAIRS</h1>
+                            <div class="tagline">Hurry!! Offer for limited time and period. Hey dont miss chance.</div>
+                            <div class="banner_sale_button">
+                                <a href="/shop">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <!-- <t t-snippet="theme_livila.banner_design_one" t-thumbnail="/theme_livila/static/src/images/v_drawars1.jpg"/> -->
+
+    <!-- Banner Design 2 -->
+    <template id="banner_design_two" name="Banner Design 2">
+        <section class="banner_design_two custom">
+            <div class="banner_design_two-gridbox banner_design_two-gridbox_small">
+                <div class="banner_design_two-container">
+                    <div class="banner_design_two-image">
+                        <img src="/theme_livila/static/src/images/sale_drawers1.jpg" alt=""/>
+                    </div>
+                    <div class="banner_design_two-overlay_bg">
+                        <div class="banner_design_two-content overlay_hide">
+                        </div>
+                    </div>
+                    <div class="banner_design_two-overlay_hover overlay_hide">
+                        <div class="banner_design_two-content">
+                        </div>
+                    </div>
+                    <div class="banner_design_two-overlay overlay_hide">
+                        <div class="banner_design_two-content">
+                            <h1>50% OFF ON ALL DRAWERS</h1>
+                            <div class="tagline">Hurry!! Offer for limited time and period. Hey dont miss chance.</div>
+                            <div class="banner_sale_button">
+                                <a href="/shop">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner_design_two-container">
+                    <div class="banner_design_two-image">
+                        <img src="/theme_livila/static/src/images/sale_chairs.jpg" alt=""/>
+                    </div>
+                    <div class="banner_design_two-overlay_bg overlay_hide">
+                        <div class="banner_design_two-content">
+                        </div>
+                    </div>
+                    <div class="banner_design_two-overlay_hover overlay_hide">
+                        <div class="banner_design_two-content">
+                        </div>
+                    </div>
+                    <div class="banner_design_two-overlay overlay_hide">
+                        <div class="banner_design_two-content">
+                            <h1>50% OFF ON ALL Wooden Chairs</h1>
+                            <div class="tagline">Hurry!! Offer for limited time and period. Hey dont miss chance.</div>
+                            <div class="banner_sale_button">
+                                <a href="/shop">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner_design_two-container">
+                    <div class="banner_design_two-image">
+                        <img src="/theme_livila/static/src/images/sale_drawers.jpg" alt=""/>
+                    </div>
+                    <div class="banner_design_two-overlay_bg overlay_hide">
+                        <div class="banner_design_two-content">
+                        </div>
+                    </div>
+                    <div class="banner_design_two-overlay_hover overlay_hide">
+                        <div class="banner_design_two-content">
+                        </div>
+                    </div>
+                    <div class="banner_design_two-overlay overlay_hide">
+                        <div class="banner_design_two-content">
+                            <h1>50% OFF ON ALL Wooden drawers</h1>
+                            <div class="tagline">Hurry!! Offer for limited time and period. Hey dont miss chance.</div>
+                            <div class="banner_sale_button">
+                                <a href="/shop">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <!-- <t t-snippet="theme_livila.banner_design_two" t-thumbnail="/theme_livila/static/src/images/v_drawars1.jpg"/> -->
+
+    <!-- Product Gallery -->
+
+    <!-- Product Gallery Design 1 -->
+    <template id="product_gallery_design_one" name="Product Gallery Design 1">
+        <section class="product_gallery_design_one custom pb-5">
+            <div class="container">
+                <div class="row p-2">
+                    <t t-value="request.env['product.template'].sudo().search([('is_gallery_product', '=', True)])" t-set="products_object" />
+                    <t t-set="number" t-value="int(0)" />
+                    
+                    <t t-foreach="products_object" t-as="product_object">
+                        <t t-set="number" t-value="int(number) + 1" />
+
+                        <t t-if="number &lt; 9">
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-6 zero_padding">
+                                <a t-attf-href="{{'/shop/product/' + (product_object.name.lower()).replace(' ', '-') + '-' + str(product_object.id)}}">
+                                    <div class="product_card_one">
+                                        <div class="product_card_one-container">
+                                            <div class="product_card_one-image">
+                                                <span t-field="product_object.image" t-options="{'widget': 'image', 'resize': '300x300'}"/>
+                                            </div>
+                                            <div class="product_card_one-overlay">
+                                                <span class="text-center product_card_one-see_details">See Details</span>
+                                            </div>
+                                        </div>
+                                        <div class="product_card_one-content">
+                                            <span class="pt-2 d-block product_card_one-name"><t t-esc="product_object.name" /></span>
+                                            <span class=" d-block"><t t-esc="product_object.list_price"  t-options='{"widget": "monetary", "display_currency": product_object.currency_id}' /></span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </t>
+                    </t>
+                </div>
+                <div class="d-block p-4 mt-5">
+                    <center>
+                        <a class="button-shop_all text-center" href="/shop">See All Products</a>
+                    </center>
+                </div>
+            </div>
+        </section>
+    </template>
+    <!-- <t t-snippet="theme_livila.product_gallery_design_one" t-thumbnail="/theme_livila/static/src/images/v_drawars1.jpg"/> -->
+
+    <!-- Product Gallery Design 2 -->
+    <template id="product_gallery_design_two" name="Product Gallery Design 2">
+        <section class="product_gallery_design_two custom pb-5">
+            <div class="container">
+                <div class="row p-2">
+                    <t t-value="request.env['product.template'].sudo().search([('is_gallery_product', '=', True)])" t-set="products_object" />
+                    <t t-set="number" t-value="int(0)" />
+                    
+                    <t t-foreach="products_object" t-as="product_object">
+                        <t t-set="number" t-value="int(number) + 1" />
+
+                        <t t-if="number == 5 or number == 6">
+
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-12 zero_padding">
+                                <a t-attf-href="{{'/shop/product/' + (product_object.name.lower()).replace(' ', '-') + '-' + str(product_object.id)}}">
+                                    <div class="product_card_two">
+                                        <div class="product_card_two-container">
+                                            <div class="product_card_two-image">
+                                                <span t-field="product_object.image" t-options="{'widget': 'image', 'resize': '300x300'}"/>
+                                            </div>
+                                            <div class="product_card_two-overlay">
+                                                <span class="text-center product_card_two-big_see_details">See Details</span>
+                                            </div>
+                                        </div>
+                                        <div class="product_card_two-content">
+                                            <span class="pt-2 d-block product_card_two-name"><t t-esc="product_object.name" /></span>
+                                            <span class=" d-block"><t t-esc="product_object.list_price"  t-options='{"widget": "monetary", "display_currency": product_object.currency_id}' /></span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </t>
+                        <t t-else="">
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-6 zero_padding">
+                                <a t-attf-href="{{'/shop/product/' + (product_object.name.lower()).replace(' ', '-') + '-' + str(product_object.id)}}">
+                                    <div class="product_card_two">
+                                        <div class="product_card_two-container">
+                                            <div class="product_card_two-image">
+                                                <span t-field="product_object.image" t-options="{'widget': 'image', 'resize': '300x300'}"/>
+                                            </div>
+                                            <div class="product_card_two-overlay">
+                                                <span class="text-center product_card_two-see_details">See Details</span>
+                                            </div>
+                                        </div>
+                                        <div class="product_card_two-content">
+                                            <span class="pt-2 d-block product_card_two-name"><t t-esc="product_object.name" /></span>
+                                            <span class=" d-block"><t t-esc="product_object.list_price"  t-options='{"widget": "monetary", "display_currency": product_object.currency_id}' /></span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </t>
+                        
+                    </t>
+                </div>
+                
+                <div class="d-block p-4 mt-5">
+                    <center>
+                        <a class="button-shop_all text-center" href="/shop">See All Products</a>
+                    </center>
+                </div>
+            </div>
+        </section>
+    </template>
+    <!-- <t t-snippet="theme_livila.product_gallery_design_two" t-thumbnail="/theme_livila/static/src/images/v_drawars1.jpg"/> -->
+
+    <!-- Product Gallery Design 3 -->
+    <template id="product_gallery_design_three" name="Product Gallery Design 3">
+        <section class="product_gallery_design_three custom pb-5">
+            <div class="container">
+                <div class="row p-2">
+                    <t t-value="request.env['product.template'].sudo().search([('is_gallery_product', '=', True)])" t-set="products_object" />
+                    <t t-set="number" t-value="int(0)" />
+                    
+                    <t t-foreach="products_object" t-as="product_object">
+                        <t t-set="number" t-value="int(number) + 1" />
+
+                        <t t-if="number &lt; 9">
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-6 zero_padding">
+                                <a t-attf-href="{{'/shop/product/' + (product_object.name.lower()).replace(' ', '-') + '-' + str(product_object.id)}}">
+                                    <div class="product_card_three">
+                                        <div class="product_card_three-container">
+                                            <div class="product_card_three-image">
+                                                <span t-field="product_object.image" t-options="{'widget': 'image', 'resize': '300x300'}"/>
+                                            </div>
+                                            <div class="product_card_three-overlay">
+                                                <div class="product_card_three-content">
+                                                    <span class="d-block product_card_three-name"><t t-esc="product_object.name" /></span>
+                                                    <span class="d-block product_card_three-price"><t t-esc="product_object.list_price"  t-options='{"widget": "monetary", "display_currency": product_object.currency_id}' /></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </t>
+                    </t>
+                </div>
+                <div class="d-block p-4 mt-5">
+                    <center>
+                        <a class="button-shop_all text-center" href="/shop">See All Products</a>
+                    </center>
+                </div>
+            </div>
+        </section>
+    </template>
+    <!-- <t t-snippet="theme_livila.product_gallery_design_three" t-thumbnail="/theme_livila/static/src/images/v_drawars1.jpg"/> -->
+
+    <!-- Product Gallery Design 4 -->
+    <template id="product_gallery_design_four" name="Product Gallery Design 4">
+        <section class="product_gallery_design_four custom pb-5">
+            <div class="container">
+                <div class="row p-2">
+                    <t t-value="request.env['product.template'].sudo().search([('is_gallery_product', '=', True)])" t-set="products_object" />
+                    <t t-set="number" t-value="int(0)" />
+                    
+                    <t t-foreach="products_object" t-as="product_object">
+                        <t t-set="number" t-value="int(number) + 1" />
+
+                        <t t-if="number == 5 or number == 6">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-12 zero_padding">
+                                <a t-attf-href="{{'/shop/product/' + (product_object.name.lower()).replace(' ', '-') + '-' + str(product_object.id)}}">
+                                    <div class="product_card_four">
+                                        <div class="product_card_four-container">
+                                            <div class="product_card_four-image">
+                                                <span t-field="product_object.image" t-options="{'widget': 'image', 'resize': '800x800'}"/>
+                                            </div>
+                                            <div class="product_card_four-overlay">
+                                                <div class="product_card_four-big_content">
+                                                    <span class="d-block product_card_four-big_name"><t t-esc="product_object.name" /></span>
+                                                    <span class="d-block product_card_four-price"><t t-esc="product_object.list_price"  t-options='{"widget": "monetary", "display_currency": product_object.currency_id}' /></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </t>
+                        <t t-else="">
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-6 zero_padding">
+                                <a t-attf-href="{{'/shop/product/' + (product_object.name.lower()).replace(' ', '-') + '-' + str(product_object.id)}}">
+                                    <div class="product_card_four">
+                                        <div class="product_card_four-container">
+                                            <div class="product_card_four-image">
+                                                <span t-field="product_object.image" t-options="{'widget': 'image', 'resize': '300x300'}"/>
+                                            </div>
+                                            <div class="product_card_four-overlay">
+                                                <div class="product_card_four-content">
+                                                    <span class="d-block product_card_four-name"><t t-esc="product_object.name" /></span>
+                                                    <span class="d-block product_card_four-price"><t t-esc="product_object.list_price"  t-options='{"widget": "monetary", "display_currency": product_object.currency_id}' /></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </t>
+                    </t>
+                </div>
+                <div class="d-block p-4 mt-5">
+                    <center>
+                        <a class="button-shop_all text-center" href="/shop">See All Products</a>
+                    </center>
+                </div>
+            </div>
+        </section>
+    </template>
+    <!-- <t t-snippet="theme_livila.product_gallery_design_four" t-thumbnail="/theme_livila/static/src/images/v_drawars1.jpg"/> -->
+
+    <!-- Parallexes -->
+
+    <!-- Parallex Design 1 -->
+    <template id="parallex_design_one" name="Parallex Design 1">
+        <section class="parallex_design_one custom">
+            <div class="parallex_one-effect">  
+                <div class="parallex_one-main_content">
+                    <h1>Exceptional designing for exceptional Spaces.</h1>
+                    <p>That is originally why the concept evolved to include accessories. We found that furniture sells better when you show it with accessories.</p>
+                    <div class="parallex_one-content_button">
+                        <a href="">Click to see</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <!-- <t t-snippet="theme_livila.parallex_design_one" t-thumbnail="/theme_livila/static/src/images/v_drawars1.jpg"/> -->
+
+    <!-- Parallex Design 2 -->
+    <template id="parallex_design_two" name="Parallex Design 2">
+        <section class="parallex_design_two custom">
+            <div class="parallex_two-effect"> 
+                <div class="parallex_two-cover">
+                    <div class="parallex_two-main_content">
+                        <h1>Exceptional designing for exceptional Spaces.</h1>
+                        <p>That is originally why the concept evolved to include accessories. We found that furniture sells better when you show it with accessories.</p>
+                        <div class="parallex_two-content_button">
+                            <a href="">Click to see</a>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </section>
+    </template>
+    <!-- <t t-snippet="theme_livila.parallex_design_two" t-thumbnail="/theme_livila/static/src/images/v_drawars1.jpg"/> -->
+
+    <!-- Parallex Design 3 -->
+    <template id="parallex_design_three" name="Parallex Design 3">
+        <section class="parallex_design_three custom">
+            <div class="parallex_three-effect"> 
+                <div class="parallex_three-cover">
+                    <div class="parallex_three-gridbox">
+                        <div class="parallex_three-main_content">
+                            <h1>Exceptional designing for exceptional Spaces.</h1>
+                            <p>That is originally why the concept evolved to include accessories. We found that furniture sells better when you show it with accessories.</p>
+                            <div class="parallex_three-content_button">
+                                <a href="">Click to see</a>
+                            </div>
+                        </div>
+                        <div class="parallex_three-main_image">
+                            <img src="/theme_livila/static/src/images/sale_drawers1.jpg" alt=""/>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </section>
+    </template>
+    <!-- <t t-snippet="theme_livila.parallex_design_three" t-thumbnail="/theme_livila/static/src/images/v_drawars1.jpg"/> -->
+
+    <!-- Parallex Design 4 -->
+    <template id="parallex_design_four" name="Parallex Design 4">
+        <section class="parallex_design_four custom">
+            <div class="parallex_four-effect"> 
+                <div class="parallex_four-cover">
+                    <div class="parallex_four-main_content">
+                        <h1>Exceptional designing for exceptional Spaces.</h1>
+                        <p>That is originally why the concept evolved to include accessories. We found that furniture sells better when you show it with accessories.</p>
+                        <div class="parallex_four-content_button">
+                            <a href="">Click to see</a>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </section>
+    </template>
+    <!-- <t t-snippet="theme_livila.parallex_design_four" t-thumbnail="/theme_livila/static/src/images/v_drawars1.jpg"/> -->
+
+    <!-- Brand Gallery -->
+
+    <!-- Brand Gallery 1 -->
+    <template id="brand_gallery_design_one" name="Brand Gallery Design 1">
+        <section class="brand_gallery_design_one custom">
+            <div class="brand_gallery_one">  
+                <div class="container">
+					<div class="nav-controls">
+						<div class="row">
+							<div class="col-md-2 col-sm-4 col-6">
+								<div class="item">
+									<img src="/theme_livila/static/src/images/brand1.png"/>
+								</div>
+							</div>
+							<div class="col-md-2 col-sm-4 col-6">
+								<div class="item">
+									<img src="/theme_livila/static/src/images/brand2.png"/>
+								</div>
+							</div>
+							<div class="col-md-2 col-sm-4 col-6">
+								<div class="item">
+									<img src="/theme_livila/static/src/images/brand3.png"/>
+								</div>
+							</div>
+							<div class="col-md-2 col-sm-4 col-6">
+								<div class="item">
+									<img src="/theme_livila/static/src/images/brand4.png"/>
+								</div>
+							</div>
+							<div class="col-md-2 col-sm-4 col-6">
+								<div class="item">
+									<img src="/theme_livila/static/src/images/brand5.png"/>
+								</div>
+							</div>
+							<div class="col-md-2 col-sm-4 col-6">
+								<div class="item">
+									<img src="/theme_livila/static/src/images/brand6.png"/>
+								</div>
+							</div>
+						</div>
+					</div>   
+                </div> 
+            </div>
+        </section>
+    </template>
+    <!-- <t t-snippet="theme_livila.brand_gallery_design_one" t-thumbnail="/theme_livila/static/src/images/v_drawars1.jpg"/> -->
+
+
+    <template id="add_title_hero_image" inherit_id="website.snippets" name="Hero Image Title">
+
+        <xpath expr="//div[@id='snippet_structure']" position="replace">
+        </xpath>
+        <xpath expr="//div[@id='snippet_feature']" position="replace">
+        </xpath>
+        <xpath expr="//div[@id='snippet_effect']" position="replace">
+        </xpath>
+        <xpath expr="//div[@id='snippet_content']" position="replace">
+        </xpath>
+
+        <xpath expr="//div[@id='o_scroll']" position="inside">
+            <div id="snippet_hero" class="o_panel">
+                <div class="o_panel_header">
+                    <i class="fa fa-th-large"/> Hero Image
+                </div>
+                <div class="o_panel_body">
+                    <t t-snippet="theme_livila.hero_image_design_one" t-thumbnail="/theme_livila/static/src/images/v_drawars1.jpg"/>
+                    <t t-snippet="theme_livila.hero_image_design_two" t-thumbnail="/theme_livila/static/src/images/v_drawars1.jpg"/>
+                </div>
+            </div>
+        </xpath>
+
+		<xpath expr="//div[@id='snippet_hero']" position="after">
+            <div id="snippet_headings" class="o_panel">
+                <div class="o_panel_header">
+                    <i class="fa fa-th-large"/> Headings
+                </div>
+                <div class="o_panel_body">
+                    <t t-snippet="theme_livila.heading_design_one" t-thumbnail="/theme_livila/static/src/images/v_drawars1.jpg"/>
+                    <t t-snippet="theme_livila.heading_design_two" t-thumbnail="/theme_livila/static/src/images/v_drawars1.jpg"/>
+                    <t t-snippet="theme_livila.heading_design_three" t-thumbnail="/theme_livila/static/src/images/v_drawars1.jpg"/>
+                    <t t-snippet="theme_livila.heading_design_four" t-thumbnail="/theme_livila/static/src/images/v_drawars1.jpg"/>
+                </div>
+            </div>
+        </xpath>
+
+		<xpath expr="//div[@id='snippet_headings']" position="after">
+            <div id="snippet_banner" class="o_panel">
+                <div class="o_panel_header">
+                    <i class="fa fa-th-large"/> Banners
+                </div>
+                <div class="o_panel_body">
+                    <t t-snippet="theme_livila.banner_design_one" t-thumbnail="/theme_livila/static/src/images/v_drawars1.jpg"/>
+                    <t t-snippet="theme_livila.banner_design_two" t-thumbnail="/theme_livila/static/src/images/v_drawars1.jpg"/>
+                </div>
+            </div>
+        </xpath>
+
+		<xpath expr="//div[@id='snippet_banner']" position="after">
+            <div id="snippet_product_gallery" class="o_panel">
+                <div class="o_panel_header">
+                    <i class="fa fa-th-large"/> Product Gallery
+                </div>
+                <div class="o_panel_body">
+                    <t t-snippet="theme_livila.product_gallery_design_one" t-thumbnail="/theme_livila/static/src/images/v_drawars1.jpg"/>
+                    <t t-snippet="theme_livila.product_gallery_design_two" t-thumbnail="/theme_livila/static/src/images/v_drawars1.jpg"/>
+                    <t t-snippet="theme_livila.product_gallery_design_three" t-thumbnail="/theme_livila/static/src/images/v_drawars1.jpg"/>
+                    <t t-snippet="theme_livila.product_gallery_design_four" t-thumbnail="/theme_livila/static/src/images/v_drawars1.jpg"/>
+                </div>
+            </div>
+        </xpath>
+
+        <xpath expr="//div[@id='snippet_product_gallery']" position="after">
+            <div id="snippet_parallex" class="o_panel">
+                <div class="o_panel_header">
+                    <i class="fa fa-th-large"/> Parallex
+                </div>
+                <div class="o_panel_body">
+                    <t t-snippet="theme_livila.parallex_design_one" t-thumbnail="/theme_livila/static/src/images/v_drawars1.jpg"/>
+                    <t t-snippet="theme_livila.parallex_design_two" t-thumbnail="/theme_livila/static/src/images/v_drawars1.jpg"/>
+                    <t t-snippet="theme_livila.parallex_design_three" t-thumbnail="/theme_livila/static/src/images/v_drawars1.jpg"/>
+                    <t t-snippet="theme_livila.parallex_design_four" t-thumbnail="/theme_livila/static/src/images/v_drawars1.jpg"/>
+                </div>
+            </div>
+        </xpath>
+
+        <xpath expr="//div[@id='snippet_parallex']" position="after">
+            <div id="snippet_brand_gallery" class="o_panel">
+                <div class="o_panel_header">
+                    <i class="fa fa-th-large"/> Brands Gallery
+                </div>
+                <div class="o_panel_body">
+                    <t t-snippet="theme_livila.brand_gallery_design_one" t-thumbnail="/theme_livila/static/src/images/v_drawars1.jpg"/>
+                </div>
+            </div>
+        </xpath>
+
+    </template>
+
+</odoo>

@@ -1,0 +1,1512 @@
+$color-one: #FAFDF6;
+$color-two: #070707;
+$color-three: #0c0c0c;
+$color-four:  #34ebd2;
+$color-five: #f4f0ea;
+
+.color_one{
+	background-color: #070707;
+}
+
+.text_color_one{
+	color: #070707;
+}
+
+.color_two{
+	background-color: #ff0022;
+}
+
+.text_color_two{
+	color: #ff0022;
+}
+
+.color_three{
+	background-color: #F1E4E8;
+}
+
+.text_color_three{
+	color: #F1E4E8;
+}
+
+.color_four{
+	background-color: #D2D7DF;
+}
+
+.text_color_four{
+	color: #D2D7DF;
+}
+
+.color_five{
+	background-color: #FFFFFF;
+}
+
+.text_color_five{
+	color: #FFFFFF;
+}
+
+
+$oswald: 'Oswald', sans-serif;
+
+// Global
+
+.custom a:hover{
+    text-decoration: none !important;
+    color: #212121;
+}
+
+.zero_padding{
+    padding: 0px !important;
+}
+
+.zero_margin{
+    margin: 0px !important;
+}
+
+@media (max-width: 768px){
+    .zero_padding_small{
+        padding: 0px !important;
+    }
+
+    .zero_margin_small{
+        margin: 0px !important;
+    }
+}
+
+//  Hero Image Design 1
+
+.hero_image_one-main{
+    width: 100%;
+    height: auto;
+}
+
+.hero_image_one{
+    margin: 6% 0px;
+    max-height: 600px;
+    width: 100%;
+}
+
+@media (min-width: 1200px){
+    .hero_image_one-main > .container{
+        max-width: 90% !important;
+    }
+}
+
+.hero_image_one-overlay_container{
+    position: relative; 
+    width: 100%;
+}
+
+.hero_image_one-overlay_image{
+    height: 100%;
+    width: 100%;  
+}
+
+.hero_image_one-overlay_image > img{
+    max-height: 600px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.hero_image_one-overlay_content{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba($color-three, 0.3);
+    z-index: 1;
+}
+
+.hero_image_one-anime_right{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    height: auto;
+    width: 40%;
+}
+
+.hero_image_one-anime_left{
+    height: auto;
+    width: 40%;
+}
+
+.hero_image_one-anime_left h1,
+.hero_image_one-anime_right h1{
+    font-size: 76px;
+    padding: 50px;
+    line-height: 1em;
+    font-family: $oswald;
+    font-weight: 200;
+    color: $color-one;
+}
+
+@media (max-width: 768px){
+
+    .hero_image_one{
+        margin: 6% 0px;
+        max-height: 550px !important;
+        width: 100%;
+    }
+
+    .hero_image_one-anime_right{
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        height: auto;
+        width: 50%;
+    }
+    
+    .hero_image_one-anime_left{
+        height: auto;
+        width: 50%;
+    }
+
+    .hero_image_one-overlay_image > img{
+        height: 550px !important;
+        width: 100%;
+    }
+    
+    .hero_image_one-anime_left h1,
+    .hero_image_one-anime_right h1{
+        font-size: 42px;
+        padding: 35px;
+        line-height: 1em;
+        font-family: $oswald;
+        font-weight: 200;
+        color: $color-one;
+    }
+}
+
+//  Hero Image Design 2
+
+.hero_image_two-main{
+    width: 100%;
+    height: auto;
+}
+
+.hero_image_two{
+    max-height: calc(100vh - 110px);
+    width: 100%;
+}
+
+@media (min-width: 1200px){
+    .hero_image_two-main > .container{
+        max-width: 90% !important;
+    }
+}
+
+.hero_image_two-overlay_container{
+    position: relative; 
+    width: 100%;
+}
+
+.hero_image_two-overlay_image{
+    height: 100%;
+    width: 100%;  
+}
+
+.hero_image_two-overlay_image > img{
+    max-height: calc(100vh - 110px);
+    width: 100%;
+    object-fit: cover;
+}
+
+.hero_image_two-overlay_content{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba($color-three, 0.3);
+    z-index: 1;
+}
+
+.hero_image_two-anime_right{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    height: auto;
+    width: 40%;
+}
+
+.hero_image_two-anime_left{
+    height: auto;
+    width: 40%;
+}
+
+.hero_image_two-anime_left h1,
+.hero_image_two-anime_right h1{
+    font-size: 76px;
+    padding: 50px;
+    line-height: 1em;
+    font-family: $oswald;
+    font-weight: 200;
+    color: $color-one;
+}
+
+@media (max-width: 768px){
+
+    .hero_image_two{
+        max-height: 105vh !important;
+        width: 100%;
+    }
+
+    .hero_image_two-anime_right{
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        height: auto;
+        width: 60%;
+    }
+    
+    .hero_image_two-anime_left{
+        height: auto;
+        width: 60%;
+    }
+
+    .hero_image_two-overlay_image > img{
+        height: 105vh !important;
+        width: 100%;
+    }
+    
+    .hero_image_two-anime_left h1,
+    .hero_image_two-anime_right h1{
+        font-size: 42px;
+        padding: 35px;
+        line-height: 1em;
+        font-family: $oswald;
+        font-weight: 200;
+        color: $color-one;
+    }
+}
+
+// Product Gallery 
+
+a.button-shop_all{
+    font-size: 18px;
+    padding: 15px 45px;
+    color: $color-three !important;
+    border: 2px solid $color-three;
+    text-align: center;
+}
+
+a.button-shop_all:hover{
+    background-color: $color-three;
+    color: #fff !important;
+    border: 2px solid $color-three;
+    text-decoration: none;
+}
+
+// Product Gallery Design One
+
+.product_card_one{
+    display: block;
+    height: auto;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0px;
+}
+
+.product_card_one:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 20px 3px rgb(214, 214, 218);
+    transition: .7s ease;
+    text-decoration: none !important;
+}
+
+.product_card_one-container{
+    position: relative;
+    width:100%;
+}
+
+.product_card_one:hover .product_card_one-overlay{
+    opacity: 1;
+}
+
+.product_card_one-image{
+    display: block;
+    max-height: 250px;
+    width: 100%;
+}
+
+.product_card_one-overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-color: rgba(48, 45, 73, 0.3);
+    transition: .7s ease;
+}
+
+.product_card_one-see_details{
+    display: block;
+    color: #fff;
+    margin: 110px 40px !important;
+    font-size: 16px !important;
+    border: 2px solid $color-three;
+    padding: 5px 0px;
+    background-color: $color-three;
+}
+
+.product_card_one-content{
+    display:block;
+    height: auto;
+    width: 100%;
+    font-size: 14px !important;
+}
+
+.product_card_one-name{
+    height: 32px;
+    width: 100%;
+    overflow: hidden;
+}
+
+@media (max-width: 768px){
+
+    .product_gallery-heading{
+        font-size: 2em !important;
+        padding: 0px 20px;
+    }
+
+    .product_card_one-see_details{
+        margin: 70px 30px !important;
+        font-size: 12px !important;
+    }
+
+    .product_card_one{
+        padding: 10px;
+    }
+
+    .product_card_one-content{
+        font-size: 12px !important;
+    }
+
+    .product_card_one-name{
+        height: 30px;
+        overflow: hidden;
+    }
+}
+
+// Product Gallery Design 2
+
+.product_card_two{
+    display: block;
+    height: auto;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0px;
+}
+
+.product_card_two:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 20px 3px rgb(214, 214, 218);
+    transition: .7s ease;
+}
+
+.product_card_two-container{
+    position: relative;
+    width:100%;
+}
+
+.product_card_two:hover .product_card_two-overlay{
+    opacity: 1;
+}
+
+.product_card_two-image{
+    display: block;
+    max-height: 800px;
+    width: 100%;
+}
+
+.product_card_two-image img{
+    max-height: 800px;
+    width: 100%;
+}
+
+.product_card_two-overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-color: rgba(48, 45, 73, 0.3);
+    transition: .7s ease;
+}
+
+.product_card_two-see_details{
+    display: block;
+    color: #fff;
+    margin: 110px 40px !important;
+    font-size: 16px !important;
+    border: 2px solid $color-three;
+    padding: 5px 0px;
+    background-color: $color-three;
+}
+
+.product_card_two-big_see_details{
+    display: block;
+    color: #fff;
+    margin: 250px 140px !important;
+    font-size: 20px !important;
+    border: 2px solid $color-three;
+    padding: 5px 0px;
+    background-color: $color-three;
+}
+
+
+.product_card_two-content{
+    display:block;
+    height: auto;
+    width: 100%;
+    font-size: 14px !important;
+}
+
+.product_card_two-name{
+    height: 32px;
+    width: 100%;
+    overflow: hidden;
+}
+
+@media (max-width: 768px){
+
+    .product_gallery-heading{
+        font-size: 2em !important;
+        padding: 0px 20px;
+    }
+
+    .product_card_two-big_see_details{
+        margin: 150px 80px !important;
+        font-size: 18px !important;
+    }
+
+    .product_card_two-see_details{
+        margin: 70px 30px !important;
+        font-size: 12px !important;
+    }
+
+    .product_card_two{
+        padding: 10px;
+    }
+
+    .product_card_two-content{
+        font-size: 12px !important;
+    }
+
+    .product_card_two-name{
+        height: 30px;
+        overflow: hidden;
+    }
+}
+
+// Product Gallery Design Three
+
+.product_card_three{
+    display: block;
+    height: auto;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0px;
+}
+
+.product_card_three:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 20px 3px rgb(214, 214, 218);
+    transition: .7s ease;
+    text-decoration: none !important;
+}
+
+.product_card_three-container{
+    position: relative;
+    width:100%;
+}
+
+.product_card_three:hover .product_card_three-overlay{
+    opacity: 1;
+}
+
+.product_card_three-image{
+    display: block;
+    max-height: 250px;
+    width: 100%;
+}
+
+.product_card_three-overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-color: rgba(48, 45, 73, 0.3);
+    transition: .7s ease;
+}
+
+.product_card_three-content{
+    position: absolute;
+    bottom: 0px; 
+    display:block;
+    height: auto;
+    width: calc(100% - 30px);
+    font-size: 14px !important;
+    padding: 15px;
+    margin: 15px;
+    background-color: $color-three;
+    color: #fff;
+}
+
+.product_card_three-content{
+    position: absolute;
+    bottom: 0px; 
+    display:block;
+    height: auto;
+    width: calc(100% - 30px);
+    font-size: 14px !important;
+    padding: 15px;
+    margin: 15px;
+    background-color: $color-three;
+    color: #fff;
+}
+
+.product_card_three-name{
+    width: 100%;
+    // border: 1px solid rgba(0,0,0,0);
+    border: 1px solid #fff;
+    padding: 7px 10px;
+    text-align: center;
+}
+
+.product_card_three-price{
+    width: 100%;
+    border: 1px solid rgba(0,0,0,0);
+    // border: 1px solid #fff;
+    padding: 7px 10px;
+    text-align: center;
+}
+
+@media (max-width: 768px){
+
+    .product_gallery-heading{
+        font-size: 2em !important;
+        padding: 0px 20px;
+    }
+
+    .product_card_three{
+        padding: 10px;
+    }
+
+    .product_card_three-content{
+        font-size: 12px !important;
+        background-color: rgba($color-three, 0.5);
+    }
+
+    .product_card_three-name{
+        overflow: hidden;
+        padding: 5px;
+        font-size: 10px !important;
+    }
+
+    .product_card_three-overlay{
+        opacity: 1;
+    }
+
+    .product_card_three{
+        cursor: pointer;
+        box-shadow: 0px 0px 20px 3px rgb(214, 214, 218);
+        transition: .7s ease;
+        text-decoration: none !important;
+    }
+}
+
+// Product Gallery Design Four
+
+.product_card_four{
+    display: block;
+    height: auto;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0px;
+}
+
+.product_card_four:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 20px 3px rgb(214, 214, 218);
+    transition: .7s ease;
+    text-decoration: none !important;
+}
+
+.product_card_four-container{
+    position: relative;
+    width:100%;
+}
+
+.product_card_four:hover .product_card_four-overlay{
+    opacity: 1;
+}
+
+.product_card_four-image{
+    display: block;
+    max-height: 800px;
+    width: 100%;
+}
+
+.product_card_four-image img{
+    max-height: 800px;
+    width: 100%;
+}
+
+.product_card_four-overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-color: rgba(48, 45, 73, 0.3);
+    transition: .7s ease;
+}
+
+.product_card_four-content{
+    position: absolute;
+    bottom: 0px; 
+    display:block;
+    height: auto;
+    width: calc(100% - 30px);
+    font-size: 14px !important;
+    padding: 15px;
+    margin: 15px;
+    background-color: $color-three;
+    color: #fff;
+}
+
+.product_card_four-big_content{
+    position: absolute;
+    bottom: 0px; 
+    display:block;
+    height: auto;
+    width: calc(100% - 30px);
+    font-size: 22px !important;
+    padding: 15px;
+    margin: 15px;
+    background-color: $color-three;
+    color: #fff;
+    font-weight: 300 !important;
+}
+
+.product_card_four-name{
+    width: 100%;
+    // border: 1px solid rgba(0,0,0,0);
+    border: 1px solid #fff;
+    padding: 7px 10px;
+    text-align: center;
+}
+
+.product_card_four-big_name{
+    width: 100%;
+    // border: 1px solid rgba(0,0,0,0);
+    border: 1px solid #fff;
+    padding: 7px 10px;
+    text-align: center;
+}
+
+.product_card_four-price{
+    width: 100%;
+    border: 1px solid rgba(0,0,0,0);
+    // border: 1px solid #fff;
+    padding: 7px 10px;
+    text-align: center;
+}
+
+@media (max-width: 768px){
+
+    .product_gallery-heading{
+        font-size: 2em !important;
+        padding: 0px 20px;
+    }
+
+    .product_card_four{
+        padding: 10px;
+    }
+
+    .product_card_four-content{
+        font-size: 12px !important;
+        background-color: rgba($color-three, 0.5);
+    }
+
+    .product_card_four-big_content{
+        font-size: 18px !important;
+        background-color: rgba($color-three, 0.5);
+    }
+
+    .product_card_four-name{
+        overflow: hidden;
+        padding: 5px;
+        font-size: 12px !important;
+    }
+
+    .product_card_four-big_name{
+        overflow: hidden;
+        padding: 5px;
+        font-size: 18px !important;
+    }
+
+    .product_card_four-overlay{
+        opacity: 1;
+    }
+
+    .product_card_four{
+        cursor: pointer;
+        box-shadow: 0px 0px 20px 3px rgb(214, 214, 218);
+        transition: .7s ease;
+        text-decoration: none !important;
+    }
+}
+
+// Banner Designs 
+
+// Banner Design One
+
+.banner_design_one{
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+.banner_design_one-gridbox{
+    display: grid;
+    grid-template-columns: 1fr 1fr
+}
+
+.banner_design_one-container{
+   position: relative; 
+   width: 100%;
+}
+
+.banner_design_one-image{
+    display: block;
+    width: 100%;
+    max-height: 600px;
+}
+
+.banner_design_one-image img{
+    width: 100%;
+    max-height: 600px;
+}
+
+.banner_design_one-overlay_bg{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba($color-three, 0.3);
+    z-index: 1;
+}
+
+.banner_design_one-overlay_left,
+.banner_design_one-overlay_right{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .7s ease;
+    background-color: rgba($color-three, 0.3);
+    z-index: 2;
+}
+
+.banner_design_one-overlay_left > .banner_design_one-content{
+    position: absolute;
+    display:block;
+    height: 84%;
+    width: 84%;
+    margin: 8%;
+}
+
+.banner_design_one-container:hover .banner_design_one-overlay_left,
+.banner_design_one-container:hover .banner_design_one-overlay_right{
+    opacity: 1;
+}
+
+.banner_design_one-overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    transition: .7s ease;
+    z-index: 3;
+}
+
+.banner_design_one-overlay > .banner_design_one-content{
+    position: absolute;
+    display:block;
+    height: 84%;
+    width: 84%;
+    font-size: 14px !important;
+    color: #fff;
+    text-align: center;
+    margin: 8%;
+    border: 2px solid #fff;
+}
+
+.banner_design_one-content h1{
+    margin-top: 180px;
+    padding: 0px 10px;
+	text-transform: uppercase;
+	font-family: $oswald;
+	font-weight: 400;
+}
+
+.banner_design_one-content .tagline{
+    padding: 10px;
+}
+
+.banner_design_one-content .banner_sale_button{
+    padding: 30px 0px;
+}
+
+.banner_design_one-content .banner_sale_button > a{
+    background-color: $color-one;
+    padding: 15px 50px;
+    color: $color-three;
+}
+
+.banner_design_one-content .banner_sale_button > a:hover{
+    cursor: pointer;
+    transition: .7s ease;
+    text-decoration: none !important;
+}
+
+@media (max-width: 768px){
+    .banner_design_one-gridbox{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .banner_design_one-content h1{
+        margin-top: 80px;
+        padding: 0px 10px;
+        text-transform: uppercase;
+        font-size: 1.5em;
+    }
+
+    .banner_design_one-content .tagline{
+        padding: 10px 30px;
+    }
+}
+
+
+
+
+// Banner Design Two
+
+.banner_design_two{
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+.banner_design_two-gridbox{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.banner_design_two-container{
+   position: relative; 
+   width: 100%;
+}
+
+.banner_design_two-image{
+    display: block;
+    width: 100%;
+    max-height: 600px;
+}
+
+.banner_design_two-image img{
+    width: 100%;
+    max-height: 600px;
+}
+
+.banner_design_two-overlay_bg{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba($color-three, 0.3);
+    z-index: 1;
+}
+
+.banner_design_two-overlay_hover{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .7s ease;
+    background-color: rgba($color-three, 0.3);
+    z-index: 2;
+}
+
+.banner_design_two-overlay_hover > .banner_design_two-content{
+    position: absolute;
+    display:block;
+    height: 84%;
+    width: 84%;
+    margin: 8%;
+}
+
+.banner_design_two-container:hover .banner_design_two-overlay_hover{
+    opacity: 1;
+}
+
+.banner_design_two-overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    transition: .7s ease;
+    z-index: 3;
+}
+
+.banner_design_two-overlay > .banner_design_two-content{
+    position: absolute;
+    display:block;
+    height: 84%;
+    width: 84%;
+    font-size: 14px !important;
+    color: #fff;
+    text-align: center;
+    margin: 8%;
+    border: 2px solid #fff;
+    font-family: $oswald;
+}
+
+.banner_design_two-content h1{
+    margin-top: 27%;
+    padding: 0% 10%;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    font-family: $oswald;
+}
+
+.banner_design_two-content .tagline{
+    padding: 10px 40px;
+}
+
+.banner_design_two-content .banner_sale_button{
+    padding: 30px 0px;
+}
+
+.banner_design_two-content .banner_sale_button > a{
+    background-color: $color-one;
+    padding: 4% 15%;
+    color: $color-three;
+}
+
+.banner_design_two-content .banner_sale_button > a:hover{
+    cursor: pointer;
+    transition: .7s ease;
+    text-decoration: none !important;
+}
+
+@media (max-width: 768px){
+    .banner_design_two-gridbox{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .banner_design_two-content h1{
+        margin-top: 25%;
+        padding: 0px 10px;
+        text-transform: uppercase;
+        font-size: 1.5em;
+    }
+
+    .banner_design_two-content .tagline{
+        padding: 10px 30px;
+    }
+}
+
+
+// Heading Designs
+
+// Heading Design 1
+
+.heading_one{
+    padding: 0px 50px;
+}
+
+.heading_one-content h1{
+    font-size: 24px;
+    font-family: $oswald;
+    text-align: center;
+}
+
+.heading_one-content p{
+    font-family: $oswald;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 0px;
+    font-weight: 200;
+    padding: 2px 0px;
+}
+
+.heading_one-button{
+    display: block;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom:20px;
+}
+
+.heading_one-button > a{
+    text-transform: uppercase;
+    padding: 15px 80px;
+    background-color: $color-three;
+    color: $color-one;
+    letter-spacing: 2px;
+}
+
+.heading_one-button > a:hover{
+    color: $color-one;
+    background-color: $color-three;
+
+}
+
+@media (max-width: 768px){
+    .heading_one{
+        padding: 30px;
+    }
+    
+    .heading_one-button > a{
+        padding: 15px 60px;
+    }
+}
+
+// Heading Design 2
+
+.heading_two{
+    padding: 0px 50px;
+}
+
+.heading_two-content h1{
+    font-size: 24px;
+    font-family: $oswald;
+    text-align: center;
+}
+
+.heading_two-content p{
+    font-family: $oswald;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 0px;
+    font-weight: 200;
+    padding: 2px 0px;
+}
+
+@media (max-width: 768px){
+    .heading_two{
+        padding: 30px;
+    }
+}
+
+// Heading Design 3
+
+.heading_three{
+    padding: 0px 50px;
+}
+
+.heading_three-content h1{
+    font-size: 24px;
+    font-family: $oswald;
+    text-align: center;
+}
+
+
+@media (max-width: 768px){
+    .heading_three{
+        padding: 30px;
+    }
+}
+
+// Heading Design 4
+
+.heading_four{
+    padding: 0px 50px;
+}
+
+.heading_four-content h1{
+    font-size: 42px;
+    font-family: $oswald;
+    text-align: center;
+    font-weight: 300;
+}
+
+
+@media (max-width: 768px){
+    .heading_four{
+        padding: 30px;
+    }
+
+    .heading_four-content h1{
+        font-size: 24px;
+        font-weight: 500;
+    }
+}
+
+// Parallex Designs
+
+// Parallex Design 1
+
+.parallex_design_one{
+    width: 100%;
+    overflow: hidden;
+}
+
+.parallex_one-effect{
+    height: auto;
+    width: 100%;
+    background-image: url('/theme_livila/static/src/images/slider_img1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover; 
+    background-attachment: fixed;
+}
+
+.parallex_one-main_content{
+    color: #fff;
+    display: block;
+    padding: 5%;
+    height: auto;
+    width: 45%;
+}
+
+.parallex_one-main_content h1{
+    font-family: $oswald;
+    font-size: 56px;
+    font-weight: 300;
+}
+
+.parallex_one-content_button{
+    display: block;
+    padding: 25px 0px;
+}
+
+.parallex_one-content_button a{
+    padding: 15px 70px;
+    background-color: #fff;
+    text-transform: uppercase;
+}
+
+@media (max-width: 768px){
+    .parallex_one-main_content{
+        padding: 5%;
+        width: 70%;
+    }
+
+    .parallex_one-main_content h1{
+        font-size: 42px;
+        font-weight: 300;
+    }
+}
+
+// Parallex Design 2
+
+.parallex_design_two{
+    width: 100%;
+    overflow: hidden;
+}
+
+.parallex_two-effect{
+    height: auto;
+    width: 100%;
+    background-image: url('/theme_livila/static/src/images/slider_img1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover; 
+    background-attachment: fixed;
+}
+
+.parallex_two-cover{
+    padding: 5%;
+}
+
+.parallex_two-main_content{
+    background-color: #fff;
+    color: $color-three;
+    height: auto;
+    padding: 5%;
+    width: 100%;
+}
+
+.parallex_two-main_content h1{
+    font-family: $oswald;
+    font-size: 56px;
+    font-weight: 300;
+}
+
+.parallex_two-content_button{
+    display: block;
+    padding: 25px 0px;
+}
+
+.parallex_two-content_button a{
+    padding: 15px 70px;
+    background-color: $color-three;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.parallex_two-content_button a:hover{
+    color: #fff;
+}
+
+@media (max-width: 768px){
+    .parallex_two-main_content{
+        padding: 5%;
+        width: 100%;
+    }
+
+    .parallex_two-main_content h1{
+        font-size: 42px;
+        font-weight: 300;
+    }
+}
+
+// Parallex Design 3
+
+.parallex_design_three{
+    width: 100%;
+    overflow: hidden;
+}
+
+.parallex_three-effect{
+    height: auto;
+    width: 100%;
+    background-image: url('/theme_livila/static/src/images/slider_img1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover; 
+    background-attachment: fixed;
+}
+
+.parallex_three-cover{
+    padding: 5%;
+}
+
+.parallex_three-gridbox{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+
+.parallex_three-main_content{
+    background-color: #fff;
+    color: $color-three;
+    height: auto;
+    padding: 15%;
+    width: 100%;
+}
+
+.parallex_three-main_content h1{
+    font-family: $oswald;
+    font-size: 56px;
+    font-weight: 300;
+}
+
+.parallex_three-content_button{
+    display: block;
+    padding: 25px 0px;
+}
+
+.parallex_three-content_button a{
+    padding: 15px 70px;
+    background-color: $color-three;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.parallex_three-content_button a:hover{
+    color: #fff;
+}
+
+.parallex_three-main_image{
+    background-color: #fff;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.parallex_three-main_image img{
+    padding: 10%;
+    max-height: 900px;
+    width: 100%;
+}
+
+@media (max-width: 768px){
+    .parallex_three-main_content{
+        padding: 5%;
+        width: 100%;
+    }
+
+    .parallex_three-main_content h1{
+        font-size: 42px;
+        font-weight: 300;
+	}
+
+	.parallex_three-main_image img{
+		padding: 5%;
+	}
+	
+	.parallex_three-gridbox{
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+}
+
+// Parallex Design 4
+
+.parallex_design_four{
+    width: 100%;
+    overflow: hidden;
+}
+
+.parallex_four-effect{
+    height: auto;
+    width: 100%;
+    background-image: url('/theme_livila/static/src/images/slider_img1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover; 
+    background-attachment: fixed;
+}
+
+.parallex_four-cover{
+    padding: 5%;
+}
+
+
+.parallex_four-main_content{
+    padding: 5%;
+    background-color: #fff;
+    color: $color-three;
+    display: block;
+    height: auto;
+    width: 45%;
+}
+
+.parallex_four-main_content h1{
+    font-family: $oswald;
+    font-size: 56px;
+    font-weight: 300;
+}
+
+.parallex_four-content_button{
+    display: block;
+    padding: 25px 0px;
+}
+
+.parallex_four-content_button a{
+    padding: 15px 70px;
+    background-color: $color-three;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.parallex_four-content_button a:hover{
+    color: #fff;
+}
+
+@media (max-width: 768px){
+    .parallex_four-main_content{
+        padding: 5%;
+        width: 100%;
+    }
+
+    .parallex_four-main_content h1{
+        font-size: 42px;
+        font-weight: 300;
+    }
+}
+
+// Brands Gallery
+
+// Brand Gallery Design 1
+
+.brand_gallery_design_one{
+	height: auto;
+    width: 100%;
+}
+
+.brand_gallery_one{
+    padding: 0px 0px 50px 0px;
+    height: auto;
+    width: 100%;
+}
+
+.item{
+	position: relative;
+	height: 180px;
+    width: 100%;
+}
+
+
+@media (min-width: 768px){
+	.item img{
+		position: absolute;
+		padding: 15px;
+		height: auto;
+		width: 100%;
+		top: 50%;
+		transform: translateY(-50%)
+	}
+}
+
+@media (max-width: 768px){
+	.item img{
+		position: relative;
+		padding: 15px;
+		height: auto;
+		width: 100%;
+	}
+
+	.item{
+		height: 180px;
+	}
+	
+}
+
+@media (max-width: 380px){
+	.item{
+		height: 150px;
+	}
+}

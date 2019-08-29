@@ -1,0 +1,291 @@
+<odoo>
+
+    <template id="external_files" inherit_id="website.assets_frontend">
+        <xpath expr="//link[last()]" position="after">
+            <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&amp;display=swap" rel="stylesheet" />
+
+			<link rel="stylesheet" type="text/scss" href="/theme_livila/static/color-picker/scss/jquery.minicolors.scss"/>
+
+            <link rel="stylesheet" type="text/scss" href="/theme_livila/static/src/scss/animate.scss"/>
+
+            <link rel="stylesheet" type="text/scss" href="/theme_livila/static/src/scss/main.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_livila/static/src/scss/snippets.scss"/>
+
+            <script src="/theme_livila/static/color-picker/js/jquery.minicolors.min.js"></script>
+			<script src="/theme_livila/static/OwlCarousel/js/owl.carousel.min.js"></script>
+
+            <script src="/theme_livila/static/src/js/main.js"></script>
+            <script src="/theme_livila/static/src/js/snippets.js"></script>
+        </xpath>
+    </template>
+
+    <!-- cart icon -->
+    <template id="livila_header" inherit_id="website_sale.header" name="Header Shop My Cart Link">
+        <xpath expr="//ul[@id='top_menu']/li[@id='my_cart']" position="replace">
+            <li id="my_cart"/>
+        </xpath>
+
+        <xpath expr="//ul[@id='top_menu']" position="after">
+            <t t-set="website_sale_order" t-value="website.sale_get_order()" />
+            <ul class="nav navbar-nav text-right ml-auto">
+                <li id="livila_my_cart" t-attf-class="nav-item#{'' if website_sale_order and website_sale_order.cart_quantity else ' '}">
+                    <a href="/shop/cart" class="nav-link">
+                        <span class="shopping-cart">
+                            <img src="/theme_livila/static/src/images/shopping_bag.png" height="20px" width="20px"/>
+                            <t t-if="website_sale_order.cart_quantity">
+                                <sup t-attf-class="my_cart_quantity p-1" t-esc="website_sale_order.cart_quantity" style="border:1px solid black;" />
+                            </t>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </xpath>
+    </template> 
+
+     <!-- login icon -->
+    <template id="livila_portal_show_sign_in" inherit_id="portal.portal_show_sign_in" name="Show Sign In">
+        <xpath expr="//ul[@id='top_menu']/li[last()]" position="replace">
+        </xpath>
+    </template>
+
+    <!-- user icon -->
+    <template id="livila_frontend_layout" inherit_id="portal.frontend_layout" name="Main Frontend Layout">
+        <xpath expr="//ul[@id='top_menu']/li[@class='nav-item dropdown']" position="replace">
+        </xpath>
+
+        <xpath expr="//li[@id='livila_my_cart']" position="before">
+            <li class="nav-item dropdown" id="user-signup" t-ignore="true" t-if="not user_id._is_public()">
+                <a href="#" class="nav-link" data-toggle="dropdown">
+                    <span class="pr-1"> 
+                        <img src="/theme_livila/static/src/images/user_login.png" height="20px" width="20px"/> 
+                    </span>
+                </a>
+                <div class="dropdown-menu js_usermenu" role="menu">
+                    <a href="/my/home" role="menuitem" class="dropdown-item">My Account</a>
+                    <a id="o_logout" class="dropdown-item" t-attf-href="/web/session/logout?redirect=/" role="menuitem">Logout</a>
+                </div>
+            </li>
+        </xpath>
+
+         <xpath expr="//li[@id='livila_my_cart']" position="before">
+            <span class="nav-item divider" groups="base.group_public"/>
+            <span groups="base.group_public" id="log-in pr-1" class="nav-item log-in" style="float:right;display:block;">
+                <a t-attf-href="/web/login" class="nav-link">
+                    <img src="/theme_livila/static/src/images/user_login.png" height="20px" width="20px"/>
+                </a>
+            </span>
+        </xpath>
+
+        <!-- <xpath expr="//li[@id='livila_my_cart']" position="before">
+            <t t-if="request.website.viewref('website_sale_wishlist.add_to_wishlist').active">
+                <t t-set='wishcount' t-value="len(request.env['product.wishlist'].current())"/>
+                <li id="livila_my_wish" class="nav-item">
+                    <a href="/shop/wishlist" class="nav-link">
+                        <img src="/theme_livila/static/src/images/like.png" height="20px" width="20px"/>
+                    </a>
+                </li>
+            </t>
+        </xpath> -->
+
+        <xpath expr="//nav" position="before">
+            <div class="header-social">
+                <div class="social-gridbox">
+                    <div lass="">
+                        <div class="social-email">
+                            <t t-set="company_object" t-value="request.env['res.company'].search([])" />
+                            <p>Contact Us <i class="fa small fa-circle"></i> <span class="social-mail pr-2" t-esc="company_object.phone" /> <span class="social-phone pl-2" t-esc="company_object.email" /> </p> 
+                        </div>
+                    </div>
+                    <div lass="">
+                        <div class="header-sale text-center">
+                        </div>
+                    </div>
+                    <div class=""> 
+                        <div class="social-icons text-right">
+                            <a t-if="website.social_facebook"  t-att-href="website.social_facebook"><i class="fa fa-facebook-square"/></a>
+                            <a t-if="website.social_twitter" t-att-href="website.social_twitter"><i class="fa fa-twitter"/></a>
+                            <a t-if="website.social_instagram" t-att-href="website.social_instagram"><i class="fa fa-instagram"/></a>
+                            <a t-if="website.social_youtube" t-att-href="website.social_youtube"><i class="fa fa-youtube-play"/></a>
+                            <a t-if="website.social_linkedin" t-att-href="website.social_linkedin"><i class="fa fa-linkedin"/></a>
+                            <a t-if="website.social_github" t-att-href="website.social_github"><i class="fa fa-github"/></a>
+                            <a t-if="website.social_googleplus" t-att-href="website.social_googleplus" rel="publisher"><i class="fa fa-google-plus-square"/></a>
+                            <span class=""></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+
+    </template> 
+
+	<!-- Product Details -->
+
+	<template id="livila_product" inherit_id="website_sale.product"  name="Product">
+
+		<!-- product details search remove -->
+		<xpath expr="//section[@id='product_detail']/div/div[2]" position="replace">
+		</xpath>
+
+		<!-- product details breadcrums redesign -->
+		<xpath expr="//section[@id='product_detail']/div/div[1]" position="replace">
+			<div class="col-md-12">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item">
+						<a t-att-href="keep(category=0)">Products</a>
+					</li>
+					<li t-if="category" class="breadcrumb-item">
+						<a t-att-href="keep('/shop/category/%s' % slug(category), category=0)" t-field="category.name" />
+					</li>
+					<li class="breadcrumb-item active">
+						<span t-field="product.name" />
+					</li>
+				</ol>
+			</div>
+		</xpath>
+
+		<xpath expr="//div[@id='product_details']/p[3]" position="replace">
+		</xpath>
+
+		<xpath expr="//div[@id='product_details']/hr[2]" position="replace">
+		</xpath>
+
+		<xpath expr="//section[@id='product_detail']/div[2]/div[1]" position="replace">
+			<div class="col-md-8">
+				<t t-set="variant_img" t-value="product_variant and product_variant.image_variant"/>
+				<t t-set="image_ids"  t-value="product.product_image_ids"/>
+			
+				<div id="o-carousel-product" class="carousel slide" data-ride="carousel" data-interval="0">
+
+					<div class="carousel-outer">
+						<div class="carousel-inner">
+							<div t-if="variant_img" class="carousel-item active" itemprop="image" t-field="product_variant.image" t-options="{'widget': 'image', 'class': 'product_detail_img js_variant_img', 'alt-field': 'name', 'zoom': 'image', 'unique': str(product['__last_update']) + (str(product_variant['__last_update']) or '')}"/>
+							<div t-attf-class="carousel-item#{'' if variant_img else ' active'}" itemprop="image" t-field="product.image" t-options="{'widget': 'image', 'class': 'product_detail_img', 'alt-field': 'name', 'zoom': 'image', 'unique': product['__last_update']}"/>
+							<t t-if="len(image_ids)" t-foreach="image_ids" t-as="pimg">
+								<div class="carousel-item" t-field="pimg.image" t-options='{"widget": "image", "class": "product_detail_img", "alt-field": "name", "zoom": "image" }'/>
+							</t>
+						</div>
+
+						<t t-if="len(image_ids) or variant_img">
+							<a class="carousel-control-prev" href="#o-carousel-product" role="button" data-slide="prev" >
+								<span class="fa fa-chevron-left" role="img" aria-label="Previous" title="Previous"/>
+							</a>
+							<a class="carousel-control-next" href="#o-carousel-product" role="button" data-slide="next">
+								<span class="fa fa-chevron-right" role="img" aria-label="Next" title="Next"/>
+							</a>
+						</t>
+					</div>
+
+					<ol class="carousel-indicators" t-if="len(image_ids) or variant_img">
+						<li t-if="variant_img" data-target="#o-carousel-product" data-slide-to="0" class="active">
+							<img class="img img-fluid js_variant_img_small" t-attf-src="/website/image/product.product/{{product_variant.id}}/image/90x90" t-att-alt="product.name"/>
+						</li>
+						<li data-target="#o-carousel-product" t-att-data-slide-to="1 if variant_img else '0'" t-att-class="'' if variant_img else 'active'">
+							<img class="img img-fluid" t-attf-src="/website/image/product.template/{{product.id}}/image/90x90" t-att-alt="product.name"/>
+						</li>
+						<t t-if="len(image_ids)" t-foreach="image_ids" t-as="pimg">
+							<li data-target="#o-carousel-product" t-att-data-slide-to="pimg_index + (variant_img and 2 or 1)">
+								<img class="img img-fluid" t-attf-src="/website/image/product.image/{{pimg.id}}/image/90x90" t-att-alt="pimg.name"/>
+							</li>
+						</t>
+					</ol>
+
+				</div>
+			</div>
+		</xpath>
+
+	</template>
+
+	<template id="livila_user_navbar" inherit_id="website.user_navbar" name="Footer">
+		<xpath expr="//li[@id='promote-menu']" position="after">
+			<li class="dropdown" id="livila_edit-menu">
+				<a class="dropdown-toggle o-no-caret waves" data-toggle="dropdown" href="#">Theme Edit</a>
+				<div class="dropdown-menu p-3 pb-1" role="menu">
+					<label class="o_switch m-0" for="image_overlay">
+						<input type="checkbox"  id="image_overlay" value="false"/>
+						<span/>
+						<span class="text-dark">ImageOverlay</span>
+					</label>
+				</div>
+			</li>
+		</xpath>
+	</template>
+
+
+
+    <!-- Footer -->
+    <template id="livila_footer" inherit_id="website.layout" name="Footer">
+       <xpath expr="//footer" position="replace">
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-2 col-12 col-sm-12">
+                            <div class="footer-logo">
+                                <img t-att-src="'/logo.png?company=%s' % res_company.id" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name"/>
+                            </div>
+                            <p class="footer-slogan">This is Theme Livila an elegant theme for your odoo e-commerce.</p>
+                        </div>
+                        <div class="col-md-2 col-6 col-sm-6">
+                            <h4>Explore</h4>
+                            <t t-foreach="request.env['website.page'].search([])" t-as="page_object">
+                                <t t-if="page_object.is_explore_page">
+                                    <t t-set="url" t-value="page_object.url" />
+                                    <span class="block"><a t-attf-href="{{url}}"><t t-esc="page_object.name" /></a></span>
+                                </t>
+                            </t>
+                        </div> 
+                        <div class="col-md-2 col-6 col-sm-6">
+                            <t t-set="company_object" t-value="request.env['res.company'].search([])" />
+                            <h4>Visits</h4>
+                            <span class="para-block">
+                                <span class="block para">
+                                    <t t-if="company_object.street"><t t-esc="company_object.street"/>, </t>
+                                </span>
+                                <span class="block para">
+                                    <t t-if="company_object.city"><t t-esc="company_object.city"/> </t>
+                                    <t t-if="company_object.state_id.name"><t t-esc="company_object.state_id.name"/> </t>
+                                    <t t-if="company_object.zip"><t t-esc="company_object.zip"/>, </t>
+                                </span>
+                                <span class="block para">
+                                    <t t-if="company_object.country_id.name"><t t-esc="company_object.country_id.name"/>. </t>
+                                </span>
+                            </span>
+                            <h4>Contact us</h4>
+                            <span class="para-block"> 
+                                <span class="block para"><t t-esc="company_object.phone" /></span>
+                                <span class="block para pr-3"><t t-esc="company_object.email" /></span>
+                            </span>
+                        </div>
+                        <div class="col-md-2 col-6 col-sm-6">
+                            <h4>Follow</h4>
+                            <span class="block"><a t-if="website.social_facebook" t-att-href="website.social_facebook"><i class="fa fa-facebook-square"/>Facebook</a></span>
+                            <span class="block"><a t-if="website.social_twitter" t-att-href="website.social_twitter"><i class="fa fa-twitter"/>Twitter</a></span>
+                            <span class="block"><a t-if="website.social_instagram" t-att-href="website.social_instagram"><i class="fa fa-instagram"/>Instagram</a></span>
+                            <span class="block"><a t-if="website.social_youtube" t-att-href="website.social_youtube"><i class="fa fa-youtube-play"/>Youtube</a></span>
+                            <span class="block"><a t-if="website.social_linkedin" t-att-href="website.social_linkedin"><i class="fa fa-linkedin"/>Linkedin</a></span>
+                            <span class="block"><a t-if="website.social_github" t-att-href="website.social_github"><i class="fa fa-github"/>Github</a></span>
+                            <span class="block"><a t-if="website.social_googleplus" t-att-href="website.social_googleplus" rel="publisher"><i class="fa fa-google-plus-square"/>Google-Plus</a></span>
+                        </div>
+                        <div class="col-md-2 col-6 col-sm-6">
+                            <h4>Policy</h4>
+                            <t t-foreach="request.env['website.page'].search([])" t-as="page_object">
+                                <t t-if="page_object.is_policy_page">
+                                    <t t-set="url" t-value="page_object.url" />
+                                    <span class="block"><a t-attf-href="{{url}}"><t t-esc="page_object.name" /></a></span>
+                                </t>
+                            </t>
+                        </div>
+                        <div class="col-md-2 col-12 col-sm-12">
+                            <div class="boxy"> 
+                                <a class="next-what" href="">Next:What</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copyrights">
+                        <h4>All Copyright Are Reserved By Mecabox.</h4>
+                    </div>
+                </div>
+            </footer>
+        </xpath>
+    </template>
+
+</odoo>

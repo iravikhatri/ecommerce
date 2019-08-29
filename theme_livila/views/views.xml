@@ -1,0 +1,24 @@
+<odoo>
+    <record model="ir.ui.view" id="website_pages_form_view_inherited">
+        <field name="name">inherihed.website.page</field>
+        <field name="model">website.page</field>
+        <field name="inherit_id" ref="website.website_pages_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='date_publish']" position="after">
+                <field name="is_explore_page"/>
+                <field name="is_policy_page"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="product_template_form_view_inherited">
+        <field name="name">inherihed.product.template</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="website_sale.product_template_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='group_standard_price']" position="inside">
+                <field name="is_gallery_product"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
