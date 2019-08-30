@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="ir_cron_staging_renewal_action" model="ir.cron">
+            <field name="name">Staging Renewal Service</field>
+            <field name="model_id" ref="model_ir_config_parameter"/>
+            <field name="state">code</field>
+            <field name="code">model._renew_staging()</field>
+            <field name="interval_number">1</field>
+            <field name="interval_type">minutes</field>
+            <field name="numbercall">-1</field>
+            <field name="doall" eval="False"/>
+            <!-- Active flag is set on fetchmail_server.create/write -->
+            <field name="active" eval="True"/>
+        </record>
+    </data>
+</odoo>
