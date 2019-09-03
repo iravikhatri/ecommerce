@@ -81,6 +81,12 @@
 	margin: 0px;
 }
 
+/* home */
+
+.home{
+	padding: 40px;
+}
+
 /* features */
 
 .features{
@@ -89,7 +95,7 @@
 
 .features-gridbox{
 	display: grid;
-	grid-template-columns: 1fr 19fr;
+	grid-template-columns: 1fr 9fr;
 }
 
 .features-list{

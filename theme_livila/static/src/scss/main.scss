@@ -470,7 +470,8 @@ table {
     margin-left: 15px;
     font-family: 'Raleway', sans-serif !important;
     padding: 0px !important;
-    margin-top: 45px;
+	margin-top: 45px;
+	font-family: $oswald;
 }
 
 .product_categories_heading{
@@ -478,7 +479,8 @@ table {
     margin: 0px 0px 15px 0px;
     padding-bottom: 5px;
     border-bottom: 3px solid $color-golden;
-    text-align: center;
+	text-align: center;
+	font-family: $oswald;
 }
 
 #products_grid_before #o_shop_collapse_category.nav-pills{
@@ -490,7 +492,8 @@ table {
 
 #products_grid_before ul li a{ 
     padding: 10px 25px;
-    width: 100% !important;
+	width: 100% !important;
+	font-family: $oswald;
 }
 
 #o_shop_collapse_category  li  i{
@@ -542,7 +545,9 @@ table {
 // shop attributes filter
 
 #products_grid_before .js_attributes{
-    border: 1px solid rgba(100, 100, 100, 0.1);
+	border: 1px solid rgba(100, 100, 100, 0.1);
+	margin-bottom: 20px;
+	font-family: $oswald;
 }
 
 .product_attribute_heading{
@@ -550,14 +555,15 @@ table {
     margin: 30px;
     padding-bottom: 5px;
     border-bottom: 3px solid $color-golden;
-    text-align: center;
+	text-align: center;
+	font-family: $oswald;
 }
 
 #products_grid_before .js_attributes>.nav-pills{
     padding: 30px;
     padding-top: 0px;
     margin-top: 0px !important;
-    margin-bottom: 20px;
+	margin-bottom: 20px;
 }
 
 #products_grid_before .js_attributes .nav-link{
