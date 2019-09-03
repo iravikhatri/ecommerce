@@ -281,8 +281,8 @@
                     <div class="banner_design_two-image">
                         <img src="/theme_livila/static/src/images/sale_drawers1.jpg" alt=""/>
                     </div>
-                    <div class="banner_design_two-overlay_bg">
-                        <div class="banner_design_two-content overlay_hide">
+                    <div class="banner_design_two-overlay_bg overlay_hide">
+                        <div class="banner_design_two-content">
                         </div>
                     </div>
                     <div class="banner_design_two-overlay_hover overlay_hide">
