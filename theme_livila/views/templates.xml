@@ -4,7 +4,7 @@
         <xpath expr="//link[last()]" position="after">
             <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&amp;display=swap" rel="stylesheet" />
 
-			<link rel="stylesheet" type="text/scss" href="/theme_livila/static/color-picker/scss/jquery.minicolors.scss"/>
+			
 
             <link rel="stylesheet" type="text/scss" href="/theme_livila/static/src/scss/animate.scss"/>
 
