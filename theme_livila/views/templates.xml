@@ -2,7 +2,7 @@
 	
     <template id="assets" inherit_id="web.assets_backend">
 	    <xpath expr="." position="inside">
-		<script type="text/javascript" src="/theme_livila/static/hide_fields.js"></script>
+		<script type="text/javascript" src="/theme_livila/static/src/hide_fields.js"></script>
 	    </xpath>
 	</template>
 
